@@ -22,6 +22,12 @@ namespace Database
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+    /// Kyle Byassee
+    /// 2023-02-14
+    /// 
+    /// This program functions as the front end of a database.
+    /// 
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -48,7 +54,6 @@ namespace Database
             // Create a holder strings
             string col0 = "";
             string col1 = "";
-            string sum = "";
 
             // Loop over the results of your database call
             while (read.Read())
@@ -59,7 +64,9 @@ namespace Database
 
             cn.Close();
 
-            TextArea.Text = col0 + "\n" + col1;
+            string labels = "row0" + "\t" + "row1" + "\t" + "row2";
+
+            TextArea.Text = labels + "\n" +col0 + "\n" + col1;
         }
 
         OleDbConnection cn;
@@ -82,8 +89,6 @@ namespace Database
             string col0 = "";
             string col1 = "";
             string col2 = "";
-            string sum = "";
-            string total = "";
 
             // Loop over the results of your database call
             while (read.Read())
@@ -95,7 +100,9 @@ namespace Database
 
             cn.Close();
 
-            EmployeeArea1.Text = col0 + "\n" + col1 + "\n" + col2;
+            string labels = "row0" + "\t" + "row1";
+
+            EmployeeArea1.Text = labels + "\n" + col0 + "\n" + col1 + "\n" + col2;
         }
     }
 }
