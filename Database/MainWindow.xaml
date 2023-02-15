@@ -1,0 +1,15 @@
+﻿<Window x:Name="Windy" x:Class="Database.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Database"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="EmployeeArea">
+        <Button x:Name="AssetsButton" Content="See Assets" HorizontalAlignment="Left" Margin="512,85,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBlock x:Name="TextArea" HorizontalAlignment="Left" Margin="512,170,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+        <Button x:Name="EmployeesButton" Content="See Employees" HorizontalAlignment="Left" Margin="162,85,0,0" VerticalAlignment="Top" Click="EmployeesButton_Click"/>
+        <TextBox x:Name="EmployeeArea1" HorizontalAlignment="Left" Margin="162,170,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
